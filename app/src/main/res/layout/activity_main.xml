@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  TODO (1) Cambiar ConstraintLayout por Linear Layout
+    agregar propiedad de orientation igual a "vertical"
+    eliminar etiqueta de xmlns:android (namespace) con su respectivo url  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TODO (5) Modificar  propiedad del TextView layout_width y para que sea "match_parent"
+    modificar propiedad text para que haga referencia al recurso tipo string "lblNombre"
+    eliminar las propiedades con prefijo app
+    -->
+
+    <Button
+        android:id="@+id/btn_calcular_edad"
+        android:layout_width="148dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="212dp"
+        android:hint="@string/calcular_edad"
+        android:onClick="@string/calcular_edad"
+        android:text="Calcular Edad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_nombre_persona"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="nombre de la persona"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/edt_date_of_birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_edad_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular_edad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_date_of_birth"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="@string/fecha_nacimiento"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/edt_edad_actual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvresultado"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginBottom="72dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/edt_edad_actual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/edt_date_of_birth" />
+
+
+    <!-- TODO (6) Agregar un elemento tipo EditText con propiedad layout_width que sea "match_parent",
+        propiedad layout_height que sea "wrap_content"
+        propiedad id que sea "@+id/nombre_persona"
+        propiedad inputType que sea "text"
+        propiedad hint que sea "nombre de la persona" -->
+
+    <!-- TODO (7) Agregar un elemento tipo TextView con propiedad layout_width que sea "match_parent"
+        propiedad layout_width que sea "wrap_content"
+        y con propiedad text que haga referencia al recurso tipo string de fecha de nacimiento -->
+
+    <!-- TODO (8) Agregar un elemento tipo DatePicker con propiedad layout_width que sea "match_parent"
+        propiedad layout_height que sea "wrap_content"
+        propiedad id que sea "@+id/date_of_birth"
+        propiedad datePickerMode que sea "spinner"
+        y propiedad calendarViewShown que sea "false" -->
+
+    <!-- TODO (9) Agregar un elemento tipo Button con propiedad layout_width que sea "match_parent"
+        propiedad layout_height que sea "wrap_content"
+        propiedad id que sea "@+id/calcular_edad"
+        y propiedad text que haga referencia al recurso string del boton de calcular edad -->
+
+    <!-- TODO (10) Agregar un elemento tipo TextView con propiedad layout_width que sea "match_parent"
+        propiedad layout_height que sea "wrap_content"
+        propiedad text sin valor especificado (vacio)
+        propiedad layout_gravity que sea "center"
+        y con propiedad id que sea "@+id/edad_actual"
+        -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

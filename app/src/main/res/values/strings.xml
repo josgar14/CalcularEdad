@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">E1_CalcularEdad</string>
+    <string name="nombre_persona">Nombre </string>
+    <string name="fecha_nacimiento">Fecha de Nacimiento </string>
+    <string name="calcular_edad">Calcular edad </string>
+
+</resources>
